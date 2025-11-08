@@ -147,7 +147,10 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+first_name = input ("What is your first name?").lower().strip()
+favourite_number = input("what is your favourite numher?:")
+user_name = first_name + favourite_number
+print (f"Your username could be: {user_name}")
 
 
 # Extension 2: Counting with Conditions
