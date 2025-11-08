@@ -40,9 +40,9 @@ print("-------------------------------------------\n"
 # Hint: Remember to use f-strings for clear formatting.
 #
 # Write your code below:
-
-
-
+name = input ("What is your name?:").strip()
+age = int(input ("What is your age?:"))
+print (f"Hello, {name}! You are {age} years old.")
 
 # Task 2: Decision Making (if / else)
 # -------------------------------------------
@@ -64,8 +64,13 @@ print("-------------------------------------------\n"
 # Output: "Nice choice!"
 #
 # Write your code below:
-
-
+favourite_colour = input("Enter your favourite colour:").lower().strip()
+if favourite_colour == "blue" :
+    print ("Nice choice!")
+elif favourite_colour == "yellow":
+    print ("That's a bright choice!")
+else:
+    print ("That is an interesting colour")
 
 
 # Task 3: Loops Review (for and while)
@@ -96,6 +101,13 @@ print("-------------------------------------------\n"
 # (loops again)
 #
 # Write your code below:
+repeat = "yes"
+while repeat.lower() == "yes":
+    num = int(input("Enter a number between 1 and 10"))
+    print(f"Multiplication table for {num}:")
+    for i in range (1, 11):
+        print(f"{num}* {i} = {num * i}")
+    repeat = input ("Do you want to try another number? (yes/no):")
 
 
 
@@ -135,7 +147,10 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+first_name = input ("What is your first name?").lower().strip()
+favourite_number = input("what is your favourite numher?:")
+user_name = first_name + favourite_number
+print (f"Your username could be: {user_name}")
 
 
 # Extension 2: Counting with Conditions
